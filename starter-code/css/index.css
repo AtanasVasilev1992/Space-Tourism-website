@@ -149,6 +149,10 @@ select {
     margin-top: var(--flow-space, 1rem);
 }
 
+.flow--space-small {
+    --flow-space: .75rem;
+}
+
 .container {
     padding-inline: 2em;
     margin-inline: auto;
@@ -331,7 +335,7 @@ select {
         right: 1rem;
         top: 2rem;
         background: transparent;
-        background-image: url(./assets/shared/icon-hamburger.svg);
+        background-image: url(../assets/shared/icon-hamburger.svg);
         background-repeat: no-repeat;
         background-position: center;
         width: 1.5rem;
@@ -340,7 +344,7 @@ select {
     }
     
     .mobile-nav-toggle[aria-expanded="true"] {
-        background-image: url(./assets/shared/icon-close.svg);
+        background-image: url(../assets/shared/icon-close.svg);
     }
     
     .mobile-nav-toggle:focus-visible {
@@ -568,6 +572,10 @@ body {
 
 .grid-container--crew > .crew-details {
     grid-area: content;
+}
+
+.crew-details h2 {
+    opacity: .5;
 }
 
 @media (min-width: 35em) {
