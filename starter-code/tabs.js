@@ -11,6 +11,8 @@ tabs.forEach((tab)=> {
 let tabFocus = 0;
 
 function changeTabFocus(e) {
+    // console.log(e.keyCode);
+    
     const keydownLeft = 37;
     const keydownRight = 39;
     
