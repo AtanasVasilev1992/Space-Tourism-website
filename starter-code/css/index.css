@@ -615,10 +615,35 @@ body {
 }
 
 .grid-container--crew > .crew-details {
-    grid-area: content;
+    align-self: center;
 }
 
 .crew-details h2 {
+    opacity: .5;
+}
+
+/* technology layout */
+
+.grid-container--technology {
+    --flow-space: 2rem;
+    grid-template-areas: 
+        'title'
+        'image'
+        'tabs'
+        'content';
+}
+
+.grid-container--technology > picture {
+    grid-area: image;
+    max-width: 100%;
+    border-bottom: 1px solid hsl( var(--clr-white) / .1);
+}
+
+.grid-container--technology > h1 {
+    text-align: center;
+}
+
+.technology-details h2 {
     opacity: .5;
 }
 
