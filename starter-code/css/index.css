@@ -635,8 +635,9 @@ body {
 
 .grid-container--technology > picture {
     grid-area: image;
-    max-width: 100%;
-    border-bottom: 1px solid hsl( var(--clr-white) / .1);
+    width: 100vw;
+    max-width: 100vw;
+    margin-left: calc(-50vw + 50%);
 }
 
 .grid-container--technology > h1 {
